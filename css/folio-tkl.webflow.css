@@ -1,3 +1,67 @@
+@font-face {
+  font-family: Quadran;
+  src: url('../fonts/Quadran-Bold.woff2') format("woff2"), url('../fonts/Quadran-Bold.eot') format("embedded-opentype"), url('../fonts/Quadran-Bold.woff') format("woff"), url('../fonts/Quadran-Bold.ttf') format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Quadran;
+  src: url('../fonts/Quadran-BoldItalic.woff2') format("woff2"), url('../fonts/Quadran-BoldItalic.eot') format("embedded-opentype"), url('../fonts/Quadran-BoldItalic.woff') format("woff"), url('../fonts/Quadran-BoldItalic.ttf') format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Quadran;
+  src: url('../fonts/Quadran-Italic.woff2') format("woff2"), url('../fonts/Quadran-Italic.eot') format("embedded-opentype"), url('../fonts/Quadran-Italic.woff') format("woff"), url('../fonts/Quadran-Italic.ttf') format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Quadran;
+  src: url('../fonts/Quadran-Medium.woff2') format("woff2"), url('../fonts/Quadran-Medium.eot') format("embedded-opentype"), url('../fonts/Quadran-Medium.woff') format("woff"), url('../fonts/Quadran-Medium.ttf') format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Quadran;
+  src: url('../fonts/Quadran-MediumItalic.woff2') format("woff2"), url('../fonts/Quadran-MediumItalic.eot') format("embedded-opentype"), url('../fonts/Quadran-MediumItalic.woff') format("woff"), url('../fonts/Quadran-MediumItalic.ttf') format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Quadran;
+  src: url('../fonts/Quadran-Regular.woff2') format("woff2"), url('../fonts/Quadran-Regular.eot') format("embedded-opentype"), url('../fonts/Quadran-Regular.woff') format("woff"), url('../fonts/Quadran-Regular.ttf') format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Quadran;
+  src: url('../fonts/Quadran-Light.woff2') format("woff2"), url('../fonts/Quadran-Light.eot') format("embedded-opentype"), url('../fonts/Quadran-Light.woff') format("woff"), url('../fonts/Quadran-Light.ttf') format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Quadran;
+  src: url('../fonts/Quadran-LightItalic.woff2') format("woff2"), url('../fonts/Quadran-LightItalic.eot') format("embedded-opentype"), url('../fonts/Quadran-LightItalic.woff') format("woff"), url('../fonts/Quadran-LightItalic.ttf') format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
   --neutral-50-501: #f5f4f6;
   --neutral-900: #0f0d12;
@@ -1118,6 +1182,11 @@ figcaption {
   transform: translate(0, -40px);
 }
 
+.nav_component.for-homepage.visible {
+  opacity: 1;
+  transform: translate(0);
+}
+
 .nav_container {
   justify-content: space-between;
   align-items: center;
@@ -1152,13 +1221,13 @@ figcaption {
 }
 
 .nav_availability-icon {
+  width: 1.5rem;
+  height: 1.5rem;
   color: var(--neutral-900);
   background-color: #3e8f55;
   border-radius: 100%;
   justify-content: center;
   align-items: center;
-  width: 1.5rem;
-  height: 1.5rem;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -1785,11 +1854,11 @@ figcaption {
 
 .footer-closing {
   background-color: var(--primary-700-main);
+  width: 100%;
+  height: 3.5rem;
   color: var(--white);
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 3.5rem;
   display: flex;
 }
 
@@ -2167,6 +2236,13 @@ figcaption {
     margin-right: 0;
   }
 
+  .margin-top.margin-large.flex {
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    display: flex;
+  }
+
   .margin-bottom {
     margin-top: 0;
     margin-left: 0;
@@ -2375,6 +2451,11 @@ figcaption {
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .margin-top.margin-large.flex {
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .margin-bottom {
@@ -2610,7 +2691,7 @@ figcaption {
   grid-area: 2 / 4 / 3 / 12;
 }
 
-#w-node-_55631202-f28d-e655-0d3c-2bd4528e31c6-7edffd40 {
+#w-node-b6837c26-2f6d-2ceb-fc81-a71d00a342a9-7edffd40 {
   grid-area: span 1 / span 8 / span 1 / span 8;
 }
 
@@ -2689,7 +2770,7 @@ figcaption {
     grid-column: 1 / 6;
   }
 
-  #w-node-_55631202-f28d-e655-0d3c-2bd4528e31c6-7edffd40 {
+  #w-node-b6837c26-2f6d-2ceb-fc81-a71d00a342a9-7edffd40 {
     grid-column: span 5 / span 5;
   }
 
@@ -2731,7 +2812,7 @@ figcaption {
     grid-area: span 1 / span 3 / span 1 / span 3;
   }
 
-  #w-node-_55631202-f28d-e655-0d3c-2bd4528e31c6-7edffd40 {
+  #w-node-b6837c26-2f6d-2ceb-fc81-a71d00a342a9-7edffd40 {
     grid-column: span 3 / span 3;
   }
 
